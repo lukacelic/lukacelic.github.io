@@ -9,7 +9,7 @@
     let blueSlider = document.querySelector('#blue');
     let port;
 
-    let listButton= document.querySelector("#list");
+    /*let listButton= document.querySelector("#list");
 
     function connect() {
       port.connect().then(() => {
@@ -69,9 +69,9 @@
         connect();
       }
     });
-
+*/
     listButton.addEventListener('click', function() {
-      window.navigator.usb.getDevices()
+      USB.getDevices()
       .then(devices => {
         console.log("Total devices: " + devices.length);
         devices.forEach(device => {
