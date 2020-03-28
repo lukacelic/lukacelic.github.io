@@ -12,6 +12,8 @@ var serial = {};
 
   serial.requestPort = function() {
     const filters = [
+      { 'vendorId': 0x0BDA, 'productId': 0x0138 }, // Bayer
+      { 'vendorId': 0x1A79, 'productId': 0x7410 }, // Bayer
       { 'vendorId': 0x2341, 'productId': 0x8036 }, // Arduino Leonardo
       { 'vendorId': 0x2341, 'productId': 0x8037 }, // Arduino Micro
       { 'vendorId': 0x2341, 'productId': 0x804d }, // Arduino/Genuino Zero
