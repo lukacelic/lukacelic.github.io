@@ -9,8 +9,9 @@
     let blueSlider = document.querySelector('#blue');
     let port;
 
-    /*let listButton= document.querySelector("#list");
+    let listButton= document.querySelector("#list");
 
+    /*
     function connect() {
       port.connect().then(() => {
         statusDisplay.textContent = '';
