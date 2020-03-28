@@ -71,7 +71,7 @@
     });
 
     listButton.addEventListener('click', function() {
-      navigator.usb.getDevices()
+      window.navigator.usb.getDevices()
       .then(devices => {
         console.log("Total devices: " + devices.length);
         devices.forEach(device => {
