@@ -5,7 +5,7 @@ var serial = {};
 
 
   serial.getPorts = function() {
-    return navigator.usb.getDevices().then(devices => {
+    return window.navigator.usb.getDevices().then(devices => {
       return devices.map(device => new serial.Port(device));
     });
   };
