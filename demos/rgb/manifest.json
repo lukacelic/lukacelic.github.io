@@ -1,0 +1,12 @@
+{
+  "permissions": [
+    {
+      "usbDevices": [
+        {
+          "vendorId": 0x1A61,
+          "productId": 0x3850 
+        }
+      ]
+    }
+  ]
+}
