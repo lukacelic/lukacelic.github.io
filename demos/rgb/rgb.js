@@ -72,7 +72,7 @@
     });
 */
     listButton.addEventListener('click', function() {
-      USB.getDevices()
+      navigator.usb.getDevices()
       .then(devices => {
         console.log("Total devices: " + devices.length);
         devices.forEach(device => {
