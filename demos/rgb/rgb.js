@@ -72,7 +72,10 @@
     });
 
     listButton.addEventListener('click', function() {
-      navigator.usb.getDevices()
+      navigator.usb.getDevices({
+        "vendorId": 1A61,
+        "productId": 3850
+      })
       .then(devices => {
         console.log("Total devices: " + devices.length);
         devices.forEach(device => {
