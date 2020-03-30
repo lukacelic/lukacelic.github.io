@@ -11,7 +11,7 @@
 
     let listButton= document.querySelector("#list");
 
-    /*
+    
     function connect() {
       port.connect().then(() => {
         statusDisplay.textContent = '';
@@ -70,7 +70,7 @@
         connect();
       }
     });
-*/
+
     listButton.addEventListener('click', function() {
       navigator.usb.getDevices()
       .then(devices => {
